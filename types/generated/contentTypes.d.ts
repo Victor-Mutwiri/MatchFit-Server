@@ -912,6 +912,7 @@ export interface ApiUserProfileUserProfile extends Schema.CollectionType {
     Experience: Attribute.Integer;
     Email: Attribute.Email;
     Availability: Attribute.Boolean;
+    Field: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

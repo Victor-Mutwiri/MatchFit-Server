@@ -37,6 +37,9 @@
     },
     "Availability": {
       "type": "boolean"
+    },
+    "Field": {
+      "type": "string"
     }
   }
 }
