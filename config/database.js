@@ -1,4 +1,5 @@
 const path = require('path');
+const { host, database } = require('pg/lib/defaults');
 
 module.exports = ({ env }) => {
   const client = env('DATABASE_CLIENT', 'sqlite');
@@ -47,7 +48,7 @@ module.exports = ({ env }) => {
       },
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
     },
-    postgres: {
+    /* postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
         host: env('DATABASE_HOST', 'localhost'),
@@ -69,7 +70,7 @@ module.exports = ({ env }) => {
         schema: env('DATABASE_SCHEMA', 'public'),
       },
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
-    },
+    }, */
     sqlite: {
       connection: {
         filename: path.join(
