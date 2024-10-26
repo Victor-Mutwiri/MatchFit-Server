@@ -33,9 +33,6 @@
     "Qualifications": {
       "type": "text"
     },
-    "ApplicationMethod": {
-      "type": "json"
-    },
     "jobtype": {
       "type": "relation",
       "relation": "manyToOne",
@@ -47,6 +44,21 @@
       "relation": "manyToOne",
       "target": "api::job-industry.job-industry",
       "inversedBy": "jobs"
+    },
+    "Logo": {
+      "type": "string"
+    },
+    "EmailApplication": {
+      "type": "text"
+    },
+    "LinkApplication": {
+      "type": "string"
+    },
+    "Posted": {
+      "type": "date"
+    },
+    "Location": {
+      "type": "string"
     }
   }
 }
